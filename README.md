@@ -1,1 +1,1 @@
-基于React+Webpack+ES6的前端项目模版目录
+基于React+Webpack+ES6的前端MVC+编辑器
