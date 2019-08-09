@@ -1,0 +1,249 @@
+content bottom {
+    position: fixed;
+    height: 28px;
+    width: 100%;
+    line-height: 26px;
+    background: #3b3e40;
+    border-top: 1px solid #2d2d2d;
+    bottom: 26px;
+    z-index: 1;
+    padding: 0 25px;
+    box-sizing: border-box;
+    user-select: none;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            width: 100px;
+            cursor: pointer;
+            display: inline-table;
+            text-align: center;
+            border-left: 1px solid #2d2d2d;
+            &:last-child {
+                border-right: 1px solid #2d2d2d;
+            }
+            .icon-container {
+                padding-right: 4px;
+            }
+            &.active, &:hover {
+                color: #ccc;
+                background-color: #233b3b;
+            }
+        }
+    }
+    .ide-language {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        border-right: 1px solid #2d2d2d;
+        cursor: pointer;
+        text-align: center;
+        border-left: 1px solid #2d2d2d;
+        box-sizing: border-box;
+        width: 98px;
+        .select-language {
+            width: 98px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        ul {
+            position: absolute;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 98px;
+            bottom: 26px;
+            left: -1px;
+            font-size: 12px;
+            display: none;
+            box-shadow: 0px 0px 15px #000;
+            color: #1170af;
+            li {
+                width: 100%;
+                box-sizing: border-box;
+                background-color: #131313;
+                border-bottom: 1px solid #2d2d2d;
+                box-shadow: 1px 1px 8px #000 inset;
+                &:first-child {
+                    border-top: 1px solid #2d2d2d;
+                }
+                &:hover {
+                    background-color: #233b3b;
+                }
+            }
+        }
+        &:hover {
+            background: #233b3b;
+            color: #ccc;
+            ul {
+                display: block;
+            }
+        }
+    }
+    .ide-branch {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        border-right: 1px solid #2d2d2d;
+        cursor: pointer;
+        text-align: center;
+        border-left: 1px solid #2d2d2d;
+        min-width: 98px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        img {
+            height: 13px;
+            position: relative;
+            top: 2px;
+            margin-right: 3px;
+        }
+        .btnBranch {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .branch-ui {
+            display: none;
+            position: absolute;
+            width: 240px;
+            min-height: 220px;
+            background-color: #131313;
+            bottom: 26px;
+            border: 1px solid #2d2d2d;
+            right: 0;
+            padding-top: 100px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 15px #000;
+            border-bottom: none;
+            .branch-ui-opt {
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 100px;
+                top: 0;
+                border-bottom: 1px solid #000;
+                box-sizing: border-box;
+                .ui-opt-title {
+                    background: #0e0e0e;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #2d2d2d;
+                    box-sizing: border-box;
+                    color: #4c986f;
+                }
+                .ui-opt-body {
+                    height: 60px;
+                    position: relative;
+                    font-size: 12px;
+                    .ui-opt-li {
+                        height: 30px;
+                        line-height: 30px;
+                        border-bottom: 1px solid #2d2d2d;
+                        box-sizing: border-box;
+                        box-shadow: 1px 1px 3px #000 inset;
+                        text-align: left;
+                        padding-left: 15px;
+                            color: #4c986f;
+                    }
+                    .ui-opt-li:hover {
+                        background-color: #0e0e0e;
+                        color: #fff;
+                    }
+                }
+            }
+            .branch-ui-local, .branch-ui-remote {
+                min-height: 36px;
+                border-bottom: 1px solid #2d2d2d;
+                box-sizing: border-box;
+                background-color: #131313;
+                padding: 0px 5px 10px 5px;
+                .branch-ui-title {
+                    font-size: 12px;
+                    color: #4c986f;
+                    img {
+                        height: 10px;
+                        top: 1px;
+                        margin-right: 0;
+                    }
+                }
+                .branch-ui-list {
+                    border: 1px solid #1f1e1e;
+                    min-height: 26px;
+                    box-sizing: border-box;
+                    box-shadow: 1px 1px 3px #000 inset;
+                    background: #0e0e0e;
+                    ul {
+                        font-size: 12px;
+                        li {
+                            box-shadow: 1px 1px 8px #000 inset;
+                            color: #1170af;
+                            width: 226px;
+                            box-sizing: border-box;
+                            border: none;
+                            border-bottom: 1px solid #1f1e1e;
+                            text-align: left;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            position: relative;
+                            .branch-active {
+                                position: absolute;
+                                left: 5px;
+                                font-family: cursive;
+                                font-weight: bold;
+                                color: #4c986f;
+                                font-size: 13px;
+                                display: none;
+                            }
+                            .icon-exchange, .icon-download-alt {
+                                position: absolute;
+                                right: 6px;
+                                top: 7px;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                            &:hover {
+                                color: #4c986f;
+                            }
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            &.active {
+                                color: #4c986f;
+                                .branch-active {
+                                    display: block;
+                                }
+                                .icon-exchange {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.right-122 {
+            right: 122px;
+        }
+        &.active {
+            background: #233b3b;
+            color: #ccc;
+            .branch-ui {
+                display: block;
+            }
+        }
+        &:hover {
+            background: #233b3b;
+            color: #ccc;
+            .branch-ui {
+                display: block;
+            }
+        }
+    }
+}

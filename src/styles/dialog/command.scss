@@ -1,0 +1,65 @@
+dialog command {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    letter-spacing: 1px;
+    background: #131313;
+    display: none;
+    animation-duration: .5s !important;
+    .header {
+        position: fixed;
+        top: 0;
+        height: 28px;
+        line-height: 27px;
+        width: 100%;
+        padding-left: 54px;
+        border-bottom: 1px solid transparent;
+        font-size: 12px;
+        background: rgba(255,255,255,.09);
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), inset 0 0 5px rgba(255, 255, 255, 0.05), 0 0 5px rgba(0, 0, 25, 0.5), 0 5px 10px rgba(0, 0, 25, 0.3);
+        box-sizing: border-box;
+        color: #9c9c9c;
+        z-index: 5;
+        font-size: 14px;
+        span {
+            font-size: 32px;
+            position: absolute;
+            right: 8px;
+            cursor: pointer;
+            opacity: .6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .content {
+        position: fixed;
+        top: 28px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        pre {
+            margin: 0;
+                border: 0;
+                padding: 5px 8px 0;
+                font: 13.3333px Arial;
+                color: #9b9b9b;
+                    box-sizing: border-box;
+        }
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: #121212;
+            color: #9b9b9b;
+            padding: 0 8px;
+                box-sizing: border-box;
+        }
+    }
+    &.active {
+        display: block;
+    }
+}

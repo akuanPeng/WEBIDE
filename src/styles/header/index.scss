@@ -1,0 +1,157 @@
+.ide-container header {
+    position: fixed;
+    top: 0;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    padding-left: 54px;
+    border-bottom: 1px solid transparent;
+    font-size: 12px;
+    box-shadow: -1px 0 2px #333;
+    background: -webkit-linear-gradient(top,#131313,#222 90%,#333 95%,#131313);
+    box-sizing: border-box;
+    color: #9c9c9c;
+    z-index: 5;
+    opacity: .9;
+    .ide-logo {
+        width: 16px;
+        position: absolute;
+        left: 28px;
+        top: 5px;
+    }
+    .ide-version {
+        float: left;
+        padding-right: 8px;
+        padding-top: 1px;
+        text-shadow: 1px 1px 1px #000;
+        color: #58b784;
+        opacity: .9;
+    }
+    .ide-user {
+        height: 27px;
+        float: right;
+        position: relative;
+        opacity: .9;
+        transform-origin-x: 0;
+        transform: scale(.85);
+        img {
+            opacity: .6;
+            top: 5px;
+            position: relative;
+            width: 17px;
+            user-select: none;
+        }
+        .title {
+            color: #58b784;
+            top: 1px;
+            position: relative;
+            font-size: 12px;
+            margin-left: 12px;
+        }
+    }
+    .ide-menus {
+        list-style-type: none;
+        user-select: none;
+        padding: 0;
+        margin: 0;
+        .menu {
+            float: left;
+            display: inline-block;
+            cursor: pointer;
+            .name {
+                display: block;
+                padding: 0 10px;
+            }
+            .submenus {
+                width: 216px;
+                position: absolute;
+                border-radius: 3px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                margin-top: -1px;
+                margin-left: -1px;
+                z-index: 50;
+                border: 1px solid #2d2d2d;
+                border-top: none;
+                background: #131313;
+                box-shadow: 3px 0 10px #131313;
+                display: none;
+                list-style-type: none;
+                padding: 0;
+                li {
+                    position: relative;
+                    font-size: 12px;
+                    width: 100%;
+                    padding: 2px 18px 2px 30px;
+                    border-bottom: 1px solid #232323;
+                    box-sizing: border-box;
+                    opacity: .9;
+                    .icon {
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        font-size: 12px;
+                        opacity: .8;
+                    }
+                    .menuName {
+                        position: relative;
+                        top: 1px;
+                    }
+                    .menuQuick {
+                        float: right;
+                        font-size: 12px;
+                        opacity: .6;
+                    }
+                    .menuArrow {
+                        position: absolute;
+                        padding-top: 1px;
+                        right: 6px;
+                    }
+                    ul {
+                        list-style-type: none;
+                        margin-left: 186px;
+                        position: absolute;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 3px;
+                        z-index: 49;
+                        background-color: #131313;
+                        border: 1px solid #2d2d2d;
+                        width: 216px;
+                        padding: 0;
+                        margin-top: -29px;
+                        border-top: none;
+                        display: none;
+                        box-shadow: 3px 0 10px #131313;
+                    }
+                    &.merge {
+                        border-color: transparent !important;
+                    }
+                    &:hover {
+                        opacity: 1;
+                        background: -webkit-linear-gradient(top,#333,#444 90%,#222 95%,#131313);
+                        ul {
+                            display: block;
+                        }
+                    }
+                    &:last-child {
+                        padding-bottom: 5px;
+                        background: 0;
+                    }
+                }
+            }
+            &:hover {
+                color: #ccc;
+                background: #131313;
+                background: -webkit-linear-gradient(bottom,#131313,#333 90%,#222 95%,#131313);
+            }
+            &.active {
+                color: #85e8b3;
+                &:hover {
+                    .submenus {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

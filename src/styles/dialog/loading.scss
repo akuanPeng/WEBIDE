@@ -1,0 +1,37 @@
+dialog loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #232323;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 420px;
+    display: none;
+    .loading-img {
+        width: 420px;
+        height: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -210px;
+        margin-top: -138.5px;
+        overflow: hidden;
+        animation: init-loading 2s forwards;
+        opacity: .9
+    }
+    span {
+        position: absolute;
+        bottom: 20px;
+        font-size: 12px;
+        left: 50%;
+        margin-left: -253.4px;
+        color: #797979;
+        text-shadow: 0px 2px 3px #000;
+    }
+    &.active {
+        display: block;
+    }
+}

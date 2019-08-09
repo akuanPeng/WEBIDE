@@ -1,0 +1,73 @@
+ide_center tools {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    z-index: 6;
+    background: #3b3e40;
+    border-left: 1px solid #2d2d2d;
+
+    iframe {
+        border:none;
+        width:100%;
+        height: 100%;
+    }
+    .shortcuts-list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #131313;
+        .shortcuts-title {
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 42px;
+            line-height: 42px;
+            padding: 0 15px;
+            border-bottom: 1px solid #2d2d2d;
+            color: #627d8c;
+            background-color: #000;
+            min-width: 400px;
+        }
+        .shortcuts-table {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 43px;
+            overflow: auto;
+            .shortcuts-table-row {
+                position: relative;
+                height: 32px;
+                font-size: 13px;
+                width: 100%;
+                box-sizing: border-box;
+                border-bottom: 1px solid #2d2d2d;
+                min-width: 400px;
+                .shortcuts-table-row-th {
+                    box-shadow: 1px 1px 5px #000 inset;
+                    width: 30%;
+                    float: left;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0 8px;
+                    box-sizing: border-box;
+                    border-right: 1px solid #333;
+                    color: #5e7586;
+                }
+                .shortcuts-table-row-td {
+                    box-shadow: 1px 1px 5px #000 inset;
+                    width: 70%;
+                    float: left;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0 8px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

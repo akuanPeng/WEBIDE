@@ -1,0 +1,12 @@
+@import './left/index.scss';
+@import './center/index.scss';
+@import './right/index.scss';
+
+content middle {
+    bottom: 26px;
+    top: 27px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1
+}

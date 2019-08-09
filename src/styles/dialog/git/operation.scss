@@ -1,0 +1,53 @@
+git operation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: #3b3e40;
+    top: 28px;
+    border-bottom: 1px solid #2d2d2d;
+    padding: 0 25px;
+    .ide-git-opt {
+        position: relative;
+        width: 68px;
+        height: 100%;
+        float: left;
+        text-align: center;
+        padding: 10px 0;
+        text-shadow: 1px 1px 1px #131313;
+        opacity: .3;
+        border: 1px solid rgba(0,0,0,0);
+        i {
+            font-size: 24px;
+        }
+        span {
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        .git-number {
+            position: absolute;
+            top: 1px;
+            font-size: 12px;
+            transform: scale(.84);
+            background-color: rgba(244, 67, 54, .8);
+            color: #fff;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 3px #131313;
+            width: 30px;
+            left: 50%;
+            margin-left: -15px;
+        }
+        &.active {
+            cursor: pointer;
+            opacity: .8;
+        }
+        &.active:hover {
+            opacity: 1;
+            background-color: #2d2d2d;
+            box-shadow: -1px 1px 1px #4f4f4f;
+            border: 1px solid #292929;
+        }
+    }
+}

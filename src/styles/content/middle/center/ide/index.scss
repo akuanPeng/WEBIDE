@@ -1,0 +1,136 @@
+@import './code_editor/index.scss';
+
+ide_center ide {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    tabs {
+        height: 27px;
+        margin-right: 0;
+        background: #3b3e40;
+        position: absolute;
+        left: 1px;
+        right: 0;
+        text-align: left;
+        overflow-x: auto;
+        overflow-y: hidden;
+        tab {
+            position: relative;
+            height: 28px;
+            line-height: 28px;
+            display: table-cell;
+            padding: 0 28px 0 25px;
+            border-right: 1px solid #2d2d2d;
+            border-left: 2px solid transparent;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            min-width: 100px;
+            font-size: 14px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            cursor: pointer;
+            user-select: none;
+            i {
+                position: absolute;
+                height: 28px !important;
+                line-height: 28px !important;
+                left: 8px;
+                opacity: .8;
+            }
+            close {
+                position: absolute;
+                right: 10px;
+                font-size: 16px;
+                font-weight: 700;
+                top: 1px;
+                opacity: .8;
+                display: none;
+                color: #28de7c;
+                &:hover {
+                    opacity: 1;
+                }
+                &.active {
+                    display: block;
+                }
+            }
+            &:hover {
+                border-left-color: #1aaf5d;
+                color: #ccc;
+                close {
+                    display: block;
+                }
+            }
+            &.active {
+                background-color: #1a1a1a;
+                border-left-color: #1aaf5d;
+                close {
+                    display: block;
+                }
+                &:hover {
+                    background-color: #131313;
+                }
+            }
+        }
+    }
+    .more {
+        width: 10px;
+        height: 27px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        background-color: #3b3e40;
+        border-left: 1px solid #2d2d2d;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 1px #635e5e;
+        display: none;
+        .top {
+            height: 13px;
+            top: 0;
+            width: 8px;
+            position: absolute;
+            background-color: #4d5052;
+            box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+            cursor: pointer;
+            i {
+                font-size: 12px;
+                transform: scale(0.75);
+                    display: block;
+                    margin-top: 1px;
+                    margin-left: 1px;
+            }
+        }
+        .bottom {
+            height: 13px;
+            bottom: 0;
+            width: 8px;
+            position: absolute;
+            background-color: #4d5052;
+            box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+            cursor: pointer;
+            i {
+                font-size: 12px;
+                transform: scale(0.75);
+                    display: block;
+                    margin-top: 1px;
+                    margin-left:2px;
+            }
+        }
+        .top:hover, .bottom:hover {
+            background-color: #9c9c9c;
+            color: #131313;
+            border-radius: 1px;
+        }
+        .top:active, .bottom:active {
+            background-color: #4d5052;
+            color: #9c9c9c;
+        }
+    }
+    &.active {
+        tabs {
+            margin-right: 10px;
+        }
+        .more {
+            display: block;
+        }
+    }
+}

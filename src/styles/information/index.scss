@@ -1,0 +1,102 @@
+.ide-container information {
+    position: absolute;
+    z-index: 600;
+    border: 1px solid #2d2d2d;
+    box-shadow: 3px 0 10px #131313;
+    word-break: break-all;
+    opacity: .95;
+    text-align: center;
+    display: none;
+    animation-duration: .3s;
+    close {
+        font-size: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: .8;
+        text-shadow: 0 0 1px #000;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &.top {
+        top: 0;
+        left: 35%;
+        width: 30%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top: none;
+        padding-bottom: 28px;
+        padding-top: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        close {
+            bottom: -8px;
+            left: 50%;
+            margin-left: -10px;
+        }
+    }
+    &.bottom {
+        bottom: 0;
+        left: 35%;
+        width: 30%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: none;
+        padding-bottom: 3px;
+        padding-top: 28px;
+        padding-left: 5px;
+        padding-right: 5px;
+        close {
+            top: -8px;
+            left: 50%;
+            margin-left: -10px;
+        }
+    }
+    &.left {
+        left: 0;
+        top: 35%;
+        height: 30%;
+        width: 94px;
+        border-left: none;
+        padding-bottom: 28px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        close {
+            bottom: -8px;
+            left: 50%;
+            margin-left: -10px;
+        }
+    }
+    &.right {
+        right: 0;
+        top: 35%;
+        height: 30%;
+        width: 94px;
+        border-right: none;
+        padding-bottom: 28px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        close {
+            bottom: -8px;
+            left: 50%;
+            margin-left: -10px;
+        }
+    }
+    &.err {
+        background: #95a000;
+        color: #fff;
+    }
+    &.ok {
+        background: #1f9857;
+        color: #fff;
+        padding: 5px;
+        close {
+            display: none;
+        }
+    }
+    &.active {
+        display: block;
+    }
+}

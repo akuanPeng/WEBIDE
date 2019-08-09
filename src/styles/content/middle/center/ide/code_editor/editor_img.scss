@@ -1,0 +1,65 @@
+code_editor editor_img {
+        bottom: 0;
+        top: 0px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 5;
+        background-color: #333333;
+        min-width: 555px;
+        overflow: hidden;
+        display: none;
+        &.white{
+            background-image: url(./images/lucency.png);
+        }
+        &.dark{
+            background-image: url(./images/lucency_1.png);
+        }
+        .editor-preview-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 54px;
+            background-color: #1f2021;
+            border-bottom: 1px solid #4285f4;
+            z-index: 5;
+            box-shadow: 0 -1px 15px #1f9857;
+            box-sizing: border-box;
+            .editor-preview-skin {
+                width: 32px;
+                height: 32px;
+                background-color: #3b3e40;
+                border-radius: 50%;
+                border: 3px solid #4285f4;
+                margin: 11px 0px 11px 22px;
+                box-shadow: 0 0 15px #1f9857;
+                float: left;
+                cursor: pointer;
+                box-sizing: border-box;
+                &.white{
+                    background-image: url(./images/lucency.png);
+                }
+                &.dark{
+                    background-image: url(./images/lucency_1.png);
+                }
+            }
+        }
+        .editor-preview-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 54px;
+                overflow: auto;
+        }
+        .editor-preview-img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        &.active {
+            display: block;
+        }
+
+}

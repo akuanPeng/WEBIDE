@@ -1,0 +1,141 @@
+ide_center menus {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    z-index: 6;
+    background: #3b3e40;
+    border-right: 1px solid #2d2d2d;
+    .ide-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            .ide-menu-li {
+                position: relative;
+                height: 100%;
+                .ide-menu-title {
+                    height: 28px;
+                    line-height: 28px;
+                    padding: 0 10px;
+                    border-bottom: 1px solid #2d2d2d;
+                    font-size: 13px;
+                    width: 100%;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    box-sizing: border-box;
+                    text-align: left;
+                    opacity: .8;
+                    .icon-minus-sign, .icon-plus-sign, .icon-question-sign {
+                        float: left;
+                        margin-right: 6px;
+                        font-size: 14px;
+                        margin-top: 6px;
+                    }
+                    .icon-refresh {
+                        float: right;
+                        margin-right: 0;
+                        font-size: 14px;
+                        margin-top: 6px;
+                        opacity: .8;
+                    }
+                    i {
+                        opacity: .6;
+                    }
+                    i:hover {
+                        opacity: 1;
+                    }
+                }
+                .ide-menu-minus {
+                    padding: 5px 0;
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 0;
+                    top: 28px;
+                    left: 0;
+                    right: 0;
+                    overflow: auto;
+                    .menu-li {
+                        position: relative;
+                        padding: 4px 10px;
+                        font-size: 14px;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        margin-left: 1px;
+                        border: 1px solid transparent;
+                        text-align: left;
+                        height: 19px;
+                        user-select: none;
+                        .menu-close {
+                            display: inline-block;
+                            transform: rotate(-90deg);
+                        }
+                        .menu-open {
+                            position: relative;
+                            top: 1px;
+                        }
+                        .icon-spinner, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-text-alt {
+                            position: absolute;
+                            font-size: 15px;
+                            top: 7px;
+                            margin-left: 3px;
+                        }
+                        .icon-file-text-alt {
+                            margin-left: 14px;
+                        }
+                        .icon-spinner {
+                            margin-left: 12px;
+                            top: 9px;
+                        }
+                        .menu-li-text {
+                            margin-left: 23px;
+                        }
+                        .menu-li-text-file {
+                            margin-left: 32px;
+                            position: relative;
+                            top: 1px;
+                        }
+                        &.active {
+                            background: #1f9857;
+                            color: #fff;
+                        }
+                        &.right_active {
+                            border: 1px solid #1f9857;
+                        }
+                        &.info {
+                            color: #28d5ff;
+                        }
+                        &.question {
+                            color: #00ff2d;
+                        }
+                        &.plus {
+                            color: #00ff2d;
+                        }
+                        &.clash {
+                            color: #dff30d;
+                        }
+                    }
+                    .menu-ul {
+                        &.close {
+                            display: none;
+                        }
+                        &.question {
+                            color: #00ff2d;
+                        }
+                        &.plus {
+                            color: #00ff2d;
+                        }
+                        &.clash {
+                            color: #dff30d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

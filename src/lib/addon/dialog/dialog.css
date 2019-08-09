@@ -1,0 +1,144 @@
+/*.CodeMirror-dialog {
+  position: absolute;
+  left: 0; right: 0;
+  background: inherit;
+  z-index: 15;
+  padding: .3em .8em;
+  overflow: hidden;
+  color: inherit;
+  opacity:.8;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 1px solid #3B3E40;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-top: 1px solid #3B3E40;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 20em;
+  color: inherit;
+  font-family: monospace;
+}
+
+.CodeMirror-dialog button {
+  font-size: 70%;
+  background: #333;
+  color: #ccc;
+  border: 1px solid #666;
+  width: 80px;
+  cursor: pointer;
+  outline:none;
+  border-radius: 1px;
+  position: absolute;
+  padding: 2.5px 0;
+}
+
+.CodeMirror-dialog button:nth-child(1) {
+    right: 100px;
+}
+
+.CodeMirror-dialog button:nth-child(2) {
+    right: 190px;
+}
+
+.CodeMirror-dialog button:nth-child(3) {
+    right: 10px;
+}
+
+.CodeMirror-dialog button:hover {
+    box-shadow: -1px 0px 2px #333;
+    background: #2d2d2d;
+}*/
+
+
+/*
+**********************上面是没改过的，下面是改过的****************************/
+
+.CodeMirror-dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #21252b;
+    z-index: 15;
+    padding: 10px 15px;
+    overflow: hidden;
+    color: inherit;
+    opacity: .8;
+    font-size: 12px;
+}
+
+.CodeMirror-dialog-top {
+    border-top: 1px solid #181a1f;
+    bottom: 0;
+}
+
+.CodeMirror-dialog-bottom {
+    border-top: 1px solid #3B3E40;
+    bottom: 0;
+}
+
+.CodeMirror-dialog .query_left {
+    width: 70px;
+    position: absolute;
+    text-align: right;
+    line-height: 26px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.CodeMirror-dialog .query_right {
+    margin-left: 74px;
+    margin-right: 0;
+}
+
+.CodeMirror-dialog input {
+    border: 1px solid #3B3E40;
+    border-radius: 3px;
+    background: #1b1d23;
+    width: 100%;
+    height: 25px;
+    color: inherit;
+    font-family: monospace;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.CodeMirror-dialog button {
+    background: #373d48;
+    color: #ccc;
+    border: 1px solid #181a1f;
+    width: 80px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+    position: absolute;
+    padding: 4px 0;
+    font-size: 12px;
+    top: 6px;
+    letter-spacing: 1px;
+}
+
+.CodeMirror-dialog button:nth-child(1) {
+    right: 100px;
+}
+
+.CodeMirror-dialog button:nth-child(2) {
+    right: 190px;
+}
+
+.CodeMirror-dialog button:nth-child(3) {
+    right: 10px;
+}
+
+.CodeMirror-dialog button:hover {
+    background: #2d2d2d;
+}

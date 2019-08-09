@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>编辑器 2.0</title>
+        <link rel="stylesheet" type="text/css" href="src/vendor/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="src/vendor/diff/diff2html.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <textarea id="clipboard"></textarea>
+        <div id="ide"></div>
+        <script src="src/vendor/diff/diff2html.js"></script>
+        <script src="src/vendor/jquery.js"></script>
+        <script src="src/vendor/diff/diff2html-ui.js"></script>
+        <script src="src/lib/codemirror/codemirror.js"></script>
+        <script src="src/lib/addon/merge/diff_match_patch.js"></script>
+        <script src="src/lib/addon/lint/jshint.js"></script>
+        <script src="src/lib/addon/lint/jsonlint.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>

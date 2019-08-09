@@ -1,0 +1,11 @@
+@import './top/index.scss';
+@import './middle/index.scss';
+@import './bottom/index.scss';
+
+.ide-container content {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    right: 0;
+    bottom: 27px;
+}

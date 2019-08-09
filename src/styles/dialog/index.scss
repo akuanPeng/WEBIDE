@@ -1,0 +1,32 @@
+@import './git/index.scss';
+@import './newdir.scss';
+@import './newfile.scss';
+@import './rename.scss';
+@import './confirm.scss';
+@import './search.scss';
+@import './command.scss';
+@import './setting.scss';
+@import './attribute.scss';
+@import './addroute.scss';
+@import './loading.scss';
+@import './db.scss';
+
+.ide-container dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 525;
+    outline: 0;
+    color: #9c9c9c;
+    background: rgba(67, 73, 86, 0);
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    display: none;
+    &.active {
+        display: block;
+    }
+}

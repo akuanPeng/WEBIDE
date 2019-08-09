@@ -1,0 +1,38 @@
+.ide-container spin {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(67, 73, 86, 0.5);
+    z-index: 999;
+    font-size: 124px;
+    display: none;
+    .spin-logo {
+        position: absolute;
+        top: 50%;
+        margin-top: -120px;
+        left: 50%;
+        margin-left: -120px;
+        width: 240px;
+        height: 240px;
+        text-align: center;
+        line-height: 240px;
+        i {
+           animation: loading 1.2s infinite;
+           opacity: .6;
+        }
+        img {
+            width: 42px;
+            position: absolute;
+            top: 50%;
+            margin-top: -21px;
+            left: 50%;
+            margin-left: -21px;
+            animation: logo-loading 2s infinite;
+        }
+    }
+    &.active {
+        display: block;
+    }
+}

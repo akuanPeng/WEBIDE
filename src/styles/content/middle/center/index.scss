@@ -1,0 +1,13 @@
+@import './menus/index.scss';
+@import './panels/index.scss';
+@import './tools/index.scss';
+@import './ide/index.scss';
+
+middle ide_center {
+    bottom: 0;
+    top: 0;
+    left: 25px;
+    right: 25px;
+    position: absolute;
+    z-index: 1;
+}

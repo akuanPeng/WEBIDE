@@ -1,0 +1,572 @@
+git resource {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 93px;
+    files {
+        position: absolute;
+        background: #3b3e40;
+        height: 100%;
+        right: 0;
+        border-left: 1px solid #2d2d2d;
+        .ide-git-main {
+            position: absolute;
+            top: 0;
+            bottom: 28px;
+            width: 100%;
+            background: #131313;
+            file {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                .ide-git-header {
+                    position: absolute;
+                    top: 0;
+                    height: 29px;
+                    width: 100%;
+                    border-bottom: 1px solid #2d2d2d;
+                    background-color: #3b3e40;
+                    .icon-cogs {
+                        position: absolute;
+                        top: 7px;
+                        right: 6px;
+                        opacity: .6;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .ide-git-address {
+                        line-height: 30px;
+                        padding: 0 5px;
+                            font-size: 12px;
+                            .right {
+                                float: right;
+                                color: #58b784;
+                            }
+                            .icon-copy {
+                                color: #58b784;
+                            }
+                            .btnCopyGit {
+                                cursor: pointer;
+                                &:hover {
+                                    color: #fff;
+                                    .icon-copy {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                    }
+                }
+                .ide-git-content {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 30px;
+                    history {
+                        position: absolute;
+                        top: 0;
+                        border-bottom: 1px solid #3b3a3a;
+                        overflow-y: auto;
+                        font-size: 12px;
+                        box-shadow: 1px -1px 3px #000 inset;
+                        table {
+                            width: 100%;
+                            min-width: 1100px;
+                            border-spacing: 0;
+                            thead {
+                                tr {
+                                    background: #000;
+                                    th {
+                                        text-decoration: inherit;
+                                        text-align: center;
+                                        border-right: 1px solid #3b3a3a;
+                                        border-bottom: 1px solid #3b3a3a;
+                                        &:last-child {
+                                            border-right: none;
+                                        }
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    cursor: pointer;
+                                    td {
+                                        padding: 0 6px;
+                                        border-right: 1px solid #3b3a3a;
+                                        border-bottom: 1px solid #3b3a3a;
+                                        white-space: nowrap;
+                                        &:first-child {
+                                            padding: 0 4px;
+                                            border-bottom: none;
+                                            .pipe {
+                                                position: relative;
+                                                width: 8px;
+                                                height: 18px;
+                                                float: left;
+                                                text-align: center;
+                                                i {
+                                                    position: relative;
+                                                    z-index: 1;
+                                                }
+                                            }
+                                        }
+                                        &:last-child {
+                                            border-right: none;
+                                        }
+                                        .tag {
+                                            background: rgba(70, 111, 108, .6);
+                                            color: #fff;
+                                            padding: 0px 5px;
+                                            border-radius: 5px;
+                                            transform-origin-x: 0;
+                                            transform: scale(0.8);
+                                            display: inline-block;
+                                        }
+                                    }
+                                    &:last-child {
+                                        td:first-child {
+                                            border-bottom: 1px solid #3b3a3a;
+                                        }
+                                    }
+                                    &.active, &:hover {
+                                        background: #000;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .ide-git-left {
+                        position: absolute;
+                        left: 0;
+                        overflow: hidden;
+                        .ide-git-top {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 50%;
+                            overflow: auto;
+                            .ide-git-text {
+                                font-size: 12px;
+                                padding: 3px 4px 0;
+                                word-break: break-all;
+                                span {
+                                    font-weight: bold;
+                                    color: #ccc;
+                                }
+                                &:first-child {
+                                    padding-top: 5px;
+                                    margin-top: 30px;
+                                }
+                            }
+                        }
+                        .ide-git-bottom {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 50%;
+                            overflow: auto;
+                            border-top: 1px solid #2d2d2d;
+                        }
+                        .ide-git-title {
+                            position: absolute;
+                            height: 29px;
+                            line-height: 29px;
+                            font-size: 12px;
+                            padding: 0 5px;
+                            border-bottom: 1px solid #2d2d2d;
+                            left: 0;
+                            right: 0;
+                            background-color: #3c3b3b;
+                            top: 0;
+                            overflow: hidden;
+                            i {
+                                padding-right: 4px;
+                                cursor: pointer;
+                                font-size: 14px;
+                                position: relative;
+                                top: 1px;
+                                color: #2b8408;
+                            }
+                        }
+                        ul {
+                            list-style: none;
+                            top: 30px;
+                            bottom: 0;
+                            position: absolute;
+                            padding: 0;
+                            margin: 0;
+                            left: 0;
+                            right: 0;
+                            font-size: 12px;
+                            overflow: auto;
+                            box-shadow: 1px 1px 3px #000 inset;
+                            li {
+                                height: 29px;
+                                line-height: 29px;
+                                padding: 0 5px;
+                                border-bottom: 1px solid #2d2d2d;
+                                cursor: pointer;
+                                white-space: nowrap;
+                                box-shadow: 1px 1px 3px #000 inset;
+                                i {
+                                    padding-right: 4px;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    position: relative;
+                                    top: 1px;
+                                    color: #2b8408;
+                                    &.icon-plus-sign {
+                                        color: #00ff2d;
+                                    }
+                                    &.icon-minus-sign {
+                                        color: #a73131;
+                                    }
+                                    &.icon-info-sign {
+                                        color: #28d5ff;
+                                    }
+                                    &.icon-question-sign {
+                                        color: #eee;
+                                    }
+                                    &.icon-exclamation-sign {
+                                        color: #bccc0d;
+                                    }
+                                }
+                                &:hover {
+                                    background: #232323;
+                                    color: #fff;
+                                }
+                                &.active {
+                                    background: #232323;
+                                    color: #fff;
+                                }
+                            }
+                            &.wait-ul {
+                                .diff-li {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .ide-git-right {
+                        position: absolute;
+                        right: 0;
+                        border-left: 1px solid #2d2d2d;
+                        .ide-git-diff {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            overflow: auto;
+                                padding: 12px;
+                                box-shadow: 1px 1px 3px #000 inset;
+                                .d2h-code-linenumber {
+                                        background-color: #1f1e1e;
+                                        border: solid #0e7c77;
+                                            border-width: 0 1px 0 1px;
+                                }
+                                .d2h-file-wrapper {
+                                        border: 1px solid #2d2d2d;
+                                            overflow: hidden;
+                                }
+                                .d2h-file-header, .d2h-tag, .d2h-info {
+                                    background-color: #131313;
+                                }
+                                .d2h-file-header {
+                                    border-bottom: 1px solid #2d2d2d;
+                                }
+                                .d2h-info {
+                                    color: rgba(255, 255, 255, 0.3);
+                                    border-color: #2d2d2d;
+                                }
+                                .d2h-file-diff .d2h-del.d2h-change {
+                                    background-color: #4e4730;
+                                }
+                                .d2h-file-diff .d2h-ins.d2h-change {
+                                        background-color: #305830;
+                                }
+                                .d2h-ins {
+                                    background-color: #131313;
+                                    border-color: #145414;
+                                }
+                                .d2h-del {
+                                    background-color: #131313;
+                                        border-color: #443504;
+                                }
+                                .line-num1,.line-num2 {
+                                    color: #9c9c9c;
+                                }
+                        }
+                    }
+                }
+                .ide-git-submit {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 38px;
+                    line-height: 38px;
+                    border-top: 1px solid #2d2d2d;
+                    padding: 0 10px;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    i {
+                        font-size: 20px;
+                        color: #2b8408;
+                        position: relative;
+                        top: 2px;
+                        left: 2px;
+                        opacity: .8;
+                    }
+                    .ide-git-check {
+                        position: absolute;
+                        left: 3px;
+                        bottom: 0;
+                        font-size: 12px;
+                        display: none;
+                        i {
+                            font-size: 15px;
+                        }
+                        span {
+                            margin: 0 5px;
+                            color: rgba(156, 156, 156, .7);
+                        }
+                    }
+                    .ide-git-input {
+                        border: 1px solid #211c1c;
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        right: 4px;
+                        bottom: 4px;
+                        border-radius: 3px;
+                        box-shadow: 1px 1px 3px #000 inset;
+                        user-select: none;
+                        cursor: text;
+                        span {
+                            position: absolute;
+                            top: -3px;
+                            left: 30px;
+                            font-size: 13px;
+                            opacity: .4;
+                        }
+                        .git-textarea {
+                            position: absolute;
+                            top: 2px;
+                            bottom: 2px;
+                            left: 32px;
+                            right: 2px;
+                            display: none;
+                            textarea {
+                                border: none;
+                                background: rgb(14, 14, 14);
+                                outline: none;
+                                color: #939393;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                resize: none;
+                                width: 100%;
+                                padding-left: 32px;
+                                box-sizing: border-box;
+                                padding: 8px 3px 8px 8px;
+                                line-height: 16px;
+                                border-radius: 5px;
+                                box-shadow: -1px 0px 1px #0f2108;
+                            }
+                        }
+                    }
+                    .btn {
+                        position: relative;
+                        float: right;
+                        border: 1px solid #201b1b;
+                        line-height: 20px;
+                        font-size: 12px;
+                        padding: 2px;
+                        margin: 5px 34px;
+                        border-radius: 3px;
+                        width: 60px;
+                        text-align: center;
+                        background: rgba(41, 130, 6, .5);
+                        color: #ccc;
+                        cursor: pointer;
+                        display: none;
+                        &.close {
+                            background: #484444;
+                        }
+                    }
+                    .ide-git-opts {
+                        position: absolute;
+                        bottom: 0;
+                        height: 38px;
+                        display: none;
+                        left: 50%;
+                        margin-left: -134px;
+                    }
+                }
+                &.active {
+                    .ide-git-submit {
+                        height: 128px;
+                        .ide-git-check {
+                            display: block;
+                            cursor: pointer;
+                        }
+                        .ide-git-input {
+                            bottom: 38px;
+                            span {
+                                display: none;
+                            }
+                            .git-textarea {
+                                display: block;
+                            }
+                        }
+                        .btn {
+                            display: block;
+                        }
+                        .ide-git-opts {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .ide-git-footer {
+            position: absolute;
+            bottom: 0;
+            height: 28px;
+            line-height: 28px;
+            width: 100%;
+            border-top: 1px solid #2d2d2d;
+            box-shadow: -1px 0px 2px #333;
+            background: -webkit-linear-gradient(bottom, #131313 0%, #222 90%, #333 95%, #131313 100%);
+            .ide-git-tag {
+                display: inline-block;
+                border-right: 1px solid #2d2d2d;
+                width: 100px;
+                text-align: center;
+                cursor: pointer;
+                &:hover, &.active {
+                    background: #131313;
+                }
+                &.active {
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+    list {
+        position: absolute;
+        left: 0;
+        background: #3b3e40;
+        height: 100%;
+        border-right: 1px solid #2d2d2d;
+        .git-menu-list {
+            max-height: 155px;
+            overflow: auto;
+			margin-left: -14px;
+			.message {
+				float: right;
+				line-height: 24px;
+				font-size: 12px!important;
+				width: 50%;
+				text-align: right;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				color: #9c9c9c;
+			}
+        }
+        .item {
+            position: relative;
+            width: 100%;
+            padding: 5px 10px;
+            border-bottom: 1px solid #2d2d2d;
+            background: #3c3b3b;
+            font-size: 13px;
+            cursor: pointer;
+            box-sizing: border-box;
+            padding-left: 21px;
+            .icon-caret-down, .icon-caret-right {
+                position: absolute;
+                left: 8px;
+                top: 8px;
+            }
+            .icon-random, .icon-tag, .icon-ok {
+                font-size: 12px;
+                position: relative;
+                top: -1px;
+            }
+            .icon-ok {
+                top: -2px;
+            }
+            .block {
+                right: 0;
+                width: 3px;
+                background: #1aaf5d;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                display: none;
+            }
+            &:hover {
+                color: #1aaf5d;
+                background: #393939;
+                .block {
+                    display: inline-block;
+                }
+            }
+            .icon-caret-down {
+                display: none;
+                top: 8px;
+            }
+            .icon-caret-right {
+                display: inline-block;
+                padding-left: 1px;
+            }
+            .m {
+                display: none;
+                padding: 0px 8px 0;
+                font-size: 12px;
+                transform-origin-x: 0;
+                transform: scale(.95);
+                color: #9c9c9c;
+                border-radius: 2px;
+                span {
+                    font-size: 18px;
+                    position: relative;
+                    top: 2px;
+                }
+                &:hover {
+                    background-color: #444;
+                    color: #e1e1e1;
+                    box-shadow: 1px 1px 1px #131313;
+                }
+                &.frist {
+                    margin-top: 4px;
+                }
+                &.active {
+                    color: #fff;
+                }
+            }
+            &.active {
+                background: #3a3d3f;
+                .icon-caret-down {
+                    display: inline-block;
+                }
+                .icon-caret-right {
+                    display: none;
+                }
+                .m {
+                    display: block;
+                }
+            }
+        }
+    }
+}

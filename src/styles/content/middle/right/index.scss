@@ -1,0 +1,30 @@
+middle right {
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    z-index: 4;
+    background: #3b3e40;
+    border-left: 1px solid #2d2d2d;
+    right: 0;
+    .ide-menu-btn {
+        display: inline-block;
+        width: 83px;
+        left: 25px;
+        position: absolute;
+        height: 25px;
+        line-height: 26px;
+        white-space: nowrap;
+        padding: 0 10px;
+        cursor: pointer;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        text-align: center;
+        border-right: 1px solid #2d2d2d;
+        box-sizing: border-box;
+        &:hover, &.active {
+            color: #ccc;
+            box-shadow: -1px 0 2px #333;
+            background-color: #333;
+        }
+    }
+}
