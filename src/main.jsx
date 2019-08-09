@@ -332,9 +332,9 @@ window.language = comm.getUrlParam('language');
 window.perms = JSON.parse(sessionStorage[pid]);
 // window.perms = {
 //     "title": "test",
-//     "dev": "http://10.100.157.198:6502/",
-//     "uri": "http://10.100.157.198:7611/libraapi2",
-//     "git": "http://10.100.174.103:10080/root/",
+//     "dev": "http://127.0.0.1:6502/",
+//     "uri": "http://127.0.0.1:7611/libraapi2",
+//     "git": "http://127.0.0.1:10080/root/",
 //     "key": "704617284b7c76cdd6685868e461dc66",
 //     "token": '0f15a5f0211def1c203e8e5c75ab34ad',
 //     "data": {

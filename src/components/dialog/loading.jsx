@@ -14,7 +14,7 @@ class Loading extends React.Component {
                 <div className="loading-img">
                     <img src={config.imgSrc + "logo_big_6.png"} width="420"></img>
                 </div>
-    			<span>&copy; Copyright &copy; 2002-2017 版权所有 同程网络科技股份有限公司 基础架构-Web中间件</span>
+    			<span>&copy; Copyright &copy; 2002-2017 </span>
             </loading>
         );
     }

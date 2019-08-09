@@ -71,7 +71,7 @@ function request (_options) {
   })
 
   let url = options.url;
-  if (options.url.indexOf("http://leonidapi.17usoft.com") === -1) {
+  if (options.url.indexOf("http://127.0.0.1:8081") === -1) {
       url = urlJoin(window.perms.uri, options.url) + (options.qs ? '?' : '') + qs.stringify(options.qs);
       fetchOptions.headers['user-token'] = window.perms.token;
       fetchOptions.headers['asset-key'] = window.perms.key;

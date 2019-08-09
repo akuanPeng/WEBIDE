@@ -128,14 +128,14 @@ export function isexist(data, cb) {
 // 获取api
 export function comple_api(cb) {
     request.get(
-        "http://leonidapi.17usoft.com/mvcplus/helper/api"
+        "http://127.0.0.1:8081/mvcplus/helper/api"
     ).then(cb, (err) => {});
 }
 
 // 获取api lua
 export function comple_api_lua(cb) {
     request.get(
-        "http://leonidapi.17usoft.com/mvcplus/helper/api_lua"
+        "http://127.0.0.1:8081/mvcplus/helper/api_lua"
     ).then(cb, (err) => {});
 }
 
